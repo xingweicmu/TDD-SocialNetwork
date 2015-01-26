@@ -82,5 +82,15 @@ public class AccountTest {
 		assertFalse(me.whoWantsToBeFriends().contains(her.getUserName()));
 		assertFalse(her.whoWantsToBeFriends().contains(me.getUserName()));
 	}
+	
+	@Test
+	public void test3(){
+		//me = sn.join("Hakan");
+		//her = sn.join("Serra");
+		me.autoAccept();
+		me.befriend(her);
+		//sn.sendFriendRequestTo("Hakan", her);
+		assertTrue(me.hasFriend("Serra"));			
+	}
 
 }

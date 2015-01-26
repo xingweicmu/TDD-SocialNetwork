@@ -28,6 +28,9 @@ public class Account {
 				pendingResponses.add(fromAccount.getUserName());
 				fromAccount.whoDidIAskToBefriend().add(this.getUserName());
 			}
+			if(this.getAutoFlag()){
+				fromAccount.accepted(this);
+			}
 		}
 	}
 

@@ -36,14 +36,14 @@ public class SocialNetwork {
 		if (me != null && findAccountForUserName(userName) != null && !me.hasFriend(userName)) {
 
 			findAccountForUserName(userName).befriend(me);
-			if (!me.whoDidIAskToBefriend().contains(userName))
-				//me.addToAskToBeFriendLists(findAccountForUserName(userName));
-				me.whoDidIAskToBefriend().add(userName);
+//			if (!me.whoDidIAskToBefriend().contains(userName))
+//				//me.addToAskToBeFriendLists(findAccountForUserName(userName));
+//				me.whoDidIAskToBefriend().add(userName);
 
-			if (findAccountForUserName(userName).getAutoFlag()) {
-				me.accepted(findAccountForUserName(userName));
-				// me.whoDidIAskToBefriend().remove(userName);
-			} else {}
+//			if (findAccountForUserName(userName).getAutoFlag()) {
+//				me.accepted(findAccountForUserName(userName));
+//				// me.whoDidIAskToBefriend().remove(userName);
+//			} else {}
 		}
 	}
 

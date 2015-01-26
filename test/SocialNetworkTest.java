@@ -205,18 +205,7 @@ public class SocialNetworkTest {
 		assertFalse(me.whoWantsToBeFriends().contains("Cecile"));
 		assertTrue(me.whoWantsToBeFriends().contains("Serra"));
 	}
-	
-	@Test
-	public void test3(){
-		me = sn.join("Hakan");
-		her = sn.join("Serra");
-		me.autoAccept();
-		me.befriend(her);
-		//sn.sendFriendRequestTo("Hakan", her);
-		assertTrue(me.hasFriend("Serra"));			
-	}
-	
-	
+		
 	@Test
 	public void canSendUnfriendRequest() {
 		me = sn.join("Hakan");
